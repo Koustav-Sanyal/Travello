@@ -3,7 +3,7 @@
 <head>
     <title>Registration Form</title>
     <div>Please Enter The Details</div>
-
+    <div>Fill the form correctly</div>
 </head>
 <body>
 <form action="register" method="post">
@@ -11,13 +11,15 @@
     <input type="text" name="first_name" placeholder="First Person's Name"><br>
     <input type="text" name="last_name" placeholder="Last Person Name"><br>
     <input type="text" name="user_name" placeholder="User's Name"><br>
-    <input type="email" name="email" placeholder="Email"><br>
+     <input type="text" name="user_business" placeholder="User's Business"><br>
+    <input type="email" name="email address" placeholder="Email"><br>
     <input type="password" name="password1" placeholder="Password"><br>
-    <input type="password" name="password2" placeholder="Confirm Password"><br>
+    <input type="password" name="password2" placeholder="Confirm Password"><br> <input type="password" name="password3" placeholder="Password"><br>
+    <input type="password" name="password4" placeholder="Confirm Next Password"><br>
     <input type='submit'>
 </form>
 {% for message in messages %}
-    <h2><u><b>{{message}}</b></u></h2>
+    <u><b>{{message}}</b></u>
 {% endfor %}
 </body>
 </html>
